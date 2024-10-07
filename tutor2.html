@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Support System</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fde2e2; /* Warna pastel lembut */
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #b56576; /* Warna merah muda lembut */
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .image-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    img {
+      max-width: 30%; /* Gambar akan menyesuaikan dengan ukuran kontainer */
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih kuat untuk estetika */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
+    }
+
+    img:hover {
+      transform: scale(1.05); /* Efek zoom saat hover */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar saat hover */
+    }
+
+    /* Ornamen love */
+    .love {
+      position: absolute;
+      color: #ff6b6b; /* Warna merah muda cerah */
+      font-size: 3em;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .love:nth-child(1) {
+      top: -40px;
+      left: 40px;
+    }
+
+    .love:nth-child(2) {
+      top: 10px;
+      right: 60px;
+    }
+
+    .love:nth-child(3) {
+      bottom: -50px;
+      left: 30%;
+    }
+
+    /* Ornamen kucing */
+    .cat {
+      position: absolute;
+      font-size: 3em;
+      color: #ffcc00; /* Warna kuning kucing */
+      animation: floatCat 4s ease-in-out infinite;
+    }
+
+    .cat:nth-child(4) {
+      top: -30px;
+      right: 100px;
+    }
+
+    .cat:nth-child(5) {
+      bottom: 20px;
+      left: 50px;
+    }
+
+    .cat:nth-child(6) {
+      bottom: -40px;
+      right: 40%;
+    }
+
+    /* Animasi love dan kucing bergerak perlahan */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes floatCat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    /* Elemen dekoratif */
+    .decorative-element {
+      width: 100px;
+      height: 4px;
+      background-color: #b56576;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      border-radius: 2px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      img {
+        max-width: 80%; /* Menyesuaikan ukuran gambar untuk layar lebih kecil */
+      }
+    }
+    
+    /* Tambahan ornamen bunga untuk romantis */
+    .flower {
+      position: absolute;
+      font-size: 2.5em;
+      color: #ffb6c1;
+      animation: floatFlower 5s ease-in-out infinite;
+    }
+
+    .flower:nth-child(7) {
+      top: 20px;
+      left: 70px;
+    }
+
+    .flower:nth-child(8) {
+      bottom: -30px;
+      right: 50px;
+    }
+
+    @keyframes floatFlower {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Support System</h1>
+  <div class="decorative-element"></div> <!-- Elemen dekoratif untuk kesan elegan -->
+
+  <!-- Kontainer untuk gambar -->
+  <div class="image-container">
+    <span class="love">❤️</span> <!-- Ornamen love -->
+    <span class="love">💖</span> <!-- Ornamen love -->
+    <span class="love">💘</span> <!-- Ornamen love -->
+    
+    <span class="cat">🐱</span> <!-- Ornamen kucing -->
+    <span class="cat">😺</span> <!-- Ornamen kucing -->
+    <span class="cat">🐾</span> <!-- Ornamen jejak kucing -->
+
+    <span class="flower">🌸</span> <!-- Ornamen bunga -->
+    <span class="flower">🌷</span> <!-- Ornamen bunga -->
+
+    <img src="https://i.pinimg.com/736x/8f/22/d9/8f22d9d9ef128813535d0ffe4c592446.jpg" alt="Gambar 1">
+    <img src="https://i.pinimg.com/736x/2b/9c/8a/2b9c8a74b999193f6bda6d6bf000fb4e.jpg" alt="Gambar 2">
+    <img src="https://i.pinimg.com/736x/34/47/2a/34472a0bb15c7266b4c35522ca82845d.jpg" alt="Gambar 3">
+  </div>
+
+</body>
+</html>

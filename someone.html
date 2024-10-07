@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter for Vivi</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+    }
+
+    h1 {
+      color: #e91e63;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      color: #555;
+      font-family: 'Verdana', sans-serif;
+      font-size: 1.2em;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    p strong {
+      color: #e91e63;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5em;
+    }
+
+    /* Animasi pada teks */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Gambar hati interaktif */
+    .heart-image {
+      width: 100px; /* Ukuran gambar hati lebih kecil */
+      cursor: pointer;
+      margin-top: 20px;
+      animation: beat 1.5s infinite;
+      transition: transform 0.2s ease;
+    }
+
+    .heart-image:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animasi hati berdenyut */
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    /* Efek popup saat hati ditekan */
+    .popup {
+      display: none;
+      color: #ff1744;
+      font-size: 1.5em;
+      font-family: 'Dancing Script', cursive;
+      margin-top: 15px;
+    }
+
+    /* Tombol untuk tampilan selanjutnya di pojok kanan bawah */
+    .next-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #e91e63;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .next-button:hover {
+      background-color: #c2185b;
+    }
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hallo Vivi Cantik Pake Banget!!!</h1>
+    <p><strong>Maaf yaa sayangg</strong>, bikin kamuu badmoodd hari ini pasti gara gara nyeritainn mantankuu yaa 🥹. Maaff yaa sayaanggg aku gabakal ngomongg tentangg dia lagii, maaff yaa sayangg engga mikirinn perasaan muu gimanaa. Maaff juga selama ini gabisaa balikinn mood muu yangg jelekkk, but, I'm be tryyy myy bestt for youu.</p>
+    <p><strong>I wanna see you smileee</strong> because, I likee your smileee. You smilee makes me betterr and I lovee it sooo muchh! Soo, I wan sayy sorryy n lovee you more 3000 🥰🥰🥰.</p>
+    <p>I hope you can be patient and strong with this long distance relationship and as soon as possible I will give you certainty, that is truly certain. Karena aku tauu kepastian yang kita jalani ini masih buat mu ragu, so wait for moment I give you my bestt for youu 🥰🥰🥰.</p>
+
+    <!-- Gambar Hati yang bisa dipencet -->
+    <img src="https://i.pinimg.com/564x/35/7b/76/357b76a189222b137f323a5371ea1781.jpg" alt="Heart" class="heart-image" id="heartImage">
+
+    <!-- Popup pesan cinta -->
+    <div id="popupMessage" class="popup">Love you, Vivi! 💖</div>
+  </div>
+
+  <!-- Tombol untuk menuju ke tampilan selanjutnya -->
+  <button class="next-button" onclick="window.location.href='tutor2.html'">klik sini dong Cantik</button>
+
+  <script>
+    // Javascript untuk interaksi
+    const heartImage = document.getElementById('heartImage');
+    const popupMessage = document.getElementById('popupMessage');
+
+    heartImage.addEventListener('click', function() {
+      popupMessage.style.display = 'block'; // Menampilkan pesan pop-up ketika gambar ditekan
+      setTimeout(function() {
+        popupMessage.style.display = 'none'; // Sembunyikan lagi setelah 2 detik
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
